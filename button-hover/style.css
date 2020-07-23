@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+body {
+    background: #09202b;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    width: 200px;
+    height: 60px;
+    background: none;
+    border: 4px solid;
+    color: #fa3e74;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 16px;
+}
+.btn::before,.btn::after {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 4px;
+    background: #09202b;
+    transform: skewX(60deg);
+    transition: 2s linear;
+}
+.btn::before {
+    bottom: 288px;
+    left: 45%;
+}
+.btn::after {
+    top: 289px;
+    right: 45%;
+}
+.btn:hover::before {
+    left: 80%;
+}
+.btn:hover::after {
+    right: 80%;
+}
