@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100vh;
+    overflow: hidden;
+    background: darkcyan;
+}
+.center {
+    display: flex;
+    margin: 50vh;
+    padding: 50vh;
+    align-items: center;
+}
+.circle {
+    width: 10px;
+    padding: 50px;
+    border-radius: 100%;
+    background: rgb(245, 121, 168);
+
+}
+h2 {
+    position: absolute;
+    left: 53.5vh;
+    color: rgb(114, 241, 241);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 30px;
+}
+.pulse {
+    animation: animate 2s infinite;
+}
+@keyframes animate {
+    0% {
+        box-shadow: 0 0 0 20px rgba(114, 241, 241, 0.2);
+    }
+    100% {
+        box-shadow: 0 0 0 100px rgba(238, 255, 0, 0.1);
+    }
+}
