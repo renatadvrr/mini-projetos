@@ -21,6 +21,7 @@ body {
     text-transform: uppercase;
     cursor: pointer;
     font-size: 16px;
+    position: relative;
 }
 .btn::before,.btn::after {
     content: "";
@@ -29,15 +30,15 @@ body {
     height: 4px;
     background: #09202b;
     transform: skewX(60deg);
-    transition: 2s linear;
+    transition: 0.6s linear;
 }
 .btn::before {
-    bottom: 288px;
-    left: 45%;
+    bottom: -4px;
+    left: 10%;
 }
 .btn::after {
-    top: 289px;
-    right: 45%;
+    top: -4px;
+    right: 10%;
 }
 .btn:hover::before {
     left: 80%;
